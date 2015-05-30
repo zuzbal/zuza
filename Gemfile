@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'twitter-bootstrap-rails'
 gem 'quiet_assets'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'

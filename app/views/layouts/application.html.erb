@@ -6,16 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<ul>
-    <li> <%= link_to 'home', root_path %> </li>
-    <li> <%= link_to 'index', welcome_index_path %> </li>
-    <li> <%= link_to 'hello', welcome_hello_path %> </li>
-  <li> <%= link_to 'destinations', destinations_path %> </li>
-  <li> <%= link_to 'new_destination', new_destination_path %> </li>
+<body class="container">
+<ul class="nav nav-tabs">
+ 
+    <li> <%= link_to 'home', root_path, class: 'btn btn-success' %> </li>
+    <li> <%= link_to 'index', welcome_index_path, class: 'btn btn-default' %> </li>
+    <li> <%= link_to 'hello', welcome_hello_path, class: 'btn btn-info' %> </li>
+   <li> <%= link_to 'destinations', destinations_path, class: 'btn btn-warning'%> </li>
+  <li> <%= link_to 'new_destination', new_destination_path, class: 'btn btn-danger'%> </li>
   </ul>
   <i> my awesome page</i>
-<%= yield %>
-
+  <div class="jumbotron"><%= yield %></div class>
+  
 </body>
 </html>

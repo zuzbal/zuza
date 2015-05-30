@@ -17,7 +17,10 @@ class DestinationsController < ApplicationController
     
     def destination_params
       params.require(:destination).permit(:name, :transport_type, :description, :start_at,   :end_at, :photo_url)
-      
+    end
+    def destroy
+    Destination.find(params[:id]).destroy
+      redirect_to destinations_path
 
   end
 end
