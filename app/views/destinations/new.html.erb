@@ -1,0 +1,10 @@
+<i> hop hop</i>
+<%= form_for @destination do |f| %>
+  name: <%= f.text_field :name %><br />
+description : <%= f.text_field :description %><br />
+transport type : <%= f.text_field :transport_type %><br />
+start : <%= f.datetime_select :start_at %><br />
+end : <%= f.datetime_select :end_at %><br />
+
+  <%= f.submit %>
+<% end %>
