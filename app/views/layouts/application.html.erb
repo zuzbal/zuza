@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moje</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul>
+    <li> <%= link_to 'home', root_path %> </li>
+    <li> <%= link_to 'index', welcome_index_path %> </li>
+    <li> <%= link_to 'hello', welcome_hello_path %> </li>
+  </ul>
+  <i> my awesome page</i>
+<%= yield %>
+
+</body>
+</html>
